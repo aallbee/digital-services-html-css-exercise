@@ -1,0 +1,80 @@
+/*==variables==*/
+    :root {
+        /*==font sizes==*/
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --normal-font-size: .938rem;
+
+    }
+    /*==large screen font sizes==*/
+    @media screen and (min-width: 1100) {
+        :root {
+            --big-font-size: 3rem;
+            --h1-font-size: 2.25rem;
+            --h2-font-size: 1.5rem;
+            --normal-font-size: 1rem;
+    }
+}
+
+/*==base==*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+/*==reusable css=*/
+.topnav a {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    color: #fffefe;
+    text-align: center;
+    padding: 0;
+}
+
+.topnav a:hover {
+    background-color: #57a0d2;
+}
+
+.content {
+    background-color: #edf0f7;
+    padding: 10px;
+}
+
+.first_photo {
+    background-color: #fffefe;
+    padding: 10px;
+    align-items: center;
+}
+
+.second_photo {
+    background-color: #707c96;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer {
+    background-color: #1a202c;
+    padding: 10px;
+    align-items: normal;
+}
